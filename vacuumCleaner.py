@@ -3,7 +3,7 @@ import math
 
 class VacuumCleaner:
     'VacuumCleaner class. It can turn on itself or move forward following instrcutions'
-    
+
     ORIENTATIONS = ['N', 'E', 'S', 'W']
 
     def __init__(self, position, orientation, room):

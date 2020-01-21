@@ -24,7 +24,11 @@ class Parser:
             self.displayUsage()
 
     def displayUsage(self):
-        print("USAGE:\t./vacuumCleaner file\n\tfile\tfile describing the room and the vacuumCleaner informations:\n\t\tx y -> dimension of the room\n\t\tx y o -> position and orientation of the vacuumCleaner ('o' must be one of the following character: 'N', 'E', 'S' or 'W')\n\t\ti1i2...in -> instructions of the vacuumCleaner (must be one of the following instruction: 'G' for left, 'D' for right or 'A' for forward)")
+        print("USAGE:\t./vacuumCleaner file")
+        print("\tfile\tfile describing room and vacuum cleaner informations:")
+        print("\t\tx y -> room dimension")
+        print("\t\tx y o -> vacuum cleaner position and orientation ('o' must be one of the following character: 'N', 'E', 'S' or 'W')")
+        print("\t\ti1i2...in -> vacuum cleaner instructions (must be one of the following instruction: 'G' for left, 'D' for right or 'A' for forward)")
         sys.exit(0)
 
     def isInteger(self, value):
