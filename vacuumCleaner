@@ -9,24 +9,19 @@ def main(argv):
 
     # Instantiate a Parser
     parser = Parser(argv)
-
     # Open a file with informations in it
     parser.openFile()
-
     # Parse the file and get all usefull variables from it
     (roomDimensions, (vacuumCleanerPosition, vacuumCleanerOrientation), vacuumCleanerInstructions) = parser.parseFile()
 
     # Instantiate a Room
     room = Room(roomDimensions)
-
-    # Instantiate a Vacuum in this Room
+    # Instantiate a vacuum cleaner in this Room
     vacuumCleaner = room.addVacuumCleaner(vacuumCleanerPosition, vacuumCleanerOrientation)
-
     # Give instructions to this vacuum cleaner
     vacuumCleaner.readInstructions(vacuumCleanerInstructions)
-
     # Display the positions of this vacuum cleaner
     vacuumCleaner.displayVacuumCleanerInformations()
-  
+
 if __name__== "__main__":
     main(sys.argv)
